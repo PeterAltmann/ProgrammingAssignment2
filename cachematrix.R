@@ -6,6 +6,7 @@
 # makeCacheMatrix takes a matrix (squared with existing inverse) as an input.
 # Then it creates a list with four functions, that can be used to get and set 
 # values for the matrix as well as its inverse.
+
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL #Makes sure any cached value is cleared with new matrix input
         set <- function(y) { #the function that allows x$set() to be used
